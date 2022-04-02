@@ -1,0 +1,18 @@
+1. version control: also known as source control
+    - practice of tracking and managing changes of software code
+
+2. Source code management
+    - Best practice is:
+        + commit often
+        + ensure you're working from latest version
+        + make detailed notes
+        + review changes before commit
+        + use branches
+        + agree on a workflow
+
+3. Git SSH
+    - SSH key: an access credential for SSH (secure shell) network protocol
+    - this authenticated and encrypted secure network protocol is used for remote communication between machines on an unsecured open network
+
+4. Git repository
+    - git repo is a virtual storage
