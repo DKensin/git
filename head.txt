@@ -1,0 +1,27 @@
+1. Git HEAD
+    - HEAD points out the last commit in the current checkout branch.
+    - HEAD like a pointer to any reference
+    - HEAD can be understand as the "current branch"
+    - When switch branch with checkout, HEAD is transferred to the new branch
+
+git show HEAD: check the status of the Head
+
+HEAD is capable of refer to a specific revision that is not associated with a branch name. This situation
+is called a detached HEAD
+
+2. Git detached HEAD
+    - git keeps track of all commits / snapshots over time. when use "git log" = show all the previous commits
+    - Detached HEAD mode allows discover an older state of a repository
+    - when HEAD doesn't point to most recent commit, such state is called "detached HEAD"
+    - If checkout with an older commit, it will stand the detached head condition
+    - It always recommended, do not commit on detached HEAD
+
+example:
+
+git checkout <commit_id>: git checkout 83e0d6d
+    -> You are in 'detached HEAD' state.
+
+so when check with "git branch"
+    - HEAD detached at 83e0d6d
+    - feature/head-description
+    - main
