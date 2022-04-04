@@ -1,0 +1,18 @@
+1. purpose
+    - both of "git rebase" and "git merge" are designed to integrate changes from one branch into another branch
+    - consider what happen when:
+        + you start working on a new feature in a dedicated branch
+        + another team member updates the "master" branch with new commit
+
+2. git merge
+    - how to merge from master to feature
+        + git checkout feature
+        + git merge master
+    - this create a new "merge commit" in the feature branch that ties together the histories of both branches
+
+3. git rebase
+    - how to rebase:
+        + git checkout feature
+        + git rebase master
+    - this move the entire "feature branch" to begin on the tip of the "master" branch
+    - it re-writes the project history by create brand new commits for each commit in the original branch
