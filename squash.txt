@@ -20,7 +20,8 @@
         + on press "enter" key, new window of text editor will be opened to confirm that commit
         + edit text editor, if commits not want to keep, add # before commit content
         + check with git log
+        + basic, git squash git create a new branch, contain all commits in a single commit
 
     Step4. push the squased commit
         git push origin <current_branch>
-    or  git push -f origin master
+    or  git push -f origin master: delete old branch, HEAD will point to new branch
