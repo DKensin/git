@@ -1,0 +1,48 @@
+1. Cherry-picking
+    + apply some commit from one branch into another branch.
+    + in case: made a mistake and committed a change into the wrong branch, but not want to merge the whole branch
+        => solution: revert the commit and cherry-pick it on another branch
+
+2. Clone = make a copy to local branch
+
+3. Fetch:
+    + fetch branches and tags from one / more other repositorys.
+    + update the remote-tracking branch
+
+4. HEAD
+
+5. index
+    + a staging area between the working directory and repository
+    + used as the index to build up a set of changes that you want to commit together
+
+6. master
+    + a naming convention for Git branch, it's a default branch of Git
+    + master = a repository's default branch
+
+7. merge
+
+8. origin
+    + a reference to the remote repository from a project was initially cloned.
+    + it is used instead of original repository URL to make reference much easier
+
+9. pull = (fetch + merge) changes on the remote server to your working directory
+
+10. push = upload local repo content to a remote repo.
+
+11. rebase = change the base of your branch from one commit to another.
+
+12. tags
+    + make a point as a specific point in Git history
+    + 2 types of tags:
+        - light-weighted tag
+        - annotated tag
+
+13. Git rm = git remove
+
+14. Git fork
+    + a rough copy of a repository
+    + allow you to freely test and debug with changes without affecting the original project
+    + great use fork to propose changes for bug fixes. To resolve an issue for a bug that you found, you can:
+        - fork the repository
+        - make the fix
+        - forward a pull request to the project owner
