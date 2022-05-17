@@ -8,19 +8,22 @@ working directory
 staging area
 repository: after commit, changes have removed from staging -> git repo
 ===================================================================
-
 git add <file>
 git add .
+git add --ignore-removal . : add all new and updated files only
+git add -u: add all modified and deleted files
+git add *.java (add all java file): add files by wildcard (use pattern)
+===================================================================
+discard change
 
-discard change -> before add
+before add
 git checkout -- <file>: discard changes in working directory
 git restore <file>: discard changes in working directory
 
 after add:
 git restore --staged <file>: unstage
 git reset HEAD <file>: unstage
-
-
+===================================================================
 git log
 git log --oneline
 git show <commit_id>
@@ -30,16 +33,21 @@ git config --global user.email "email"
 git config --global user.name "Toan"
 git config --global user.name
 ===================================================================
-git stash save "name"
+git stash
+git stash save "message"
 git stash list
-git stash pop
+git stash apply [stash_id (stash@{0})]: re-apply the change
+git stash show: show the change
+git stash show -p: show the edited files
+git stash pop [stash_id]
+git stash drop [stash_id]
+git stash clear: delete all stashes at once
+git stash branch branch_name
 ===================================================================
 after commit:
-
 git reset HEAD~1: move in staging area
 git reset --hard <commit_id>: remove all changes
 HEAD~1: the last commit
-
 ===================================================================
 branch and merge
 

@@ -1,0 +1,12 @@
+1. Description
+    + git add: add file contents to the Index (staging area)
+    + not add the .gitignore file by the default
+
+2. Use cases:
+    + git add . = git add -a
+    + add all new and updated files only:   
+        git add --ignore-removal .
+    + add all modified and deleted files (not add newly created files)
+        git add -u 
+    + add files by wildcard (the same pattern)
+        git add *.java (add all java files)

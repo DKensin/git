@@ -24,6 +24,7 @@
 8. origin
     + a reference to the remote repository from a project was initially cloned.
     + it is used instead of original repository URL to make reference much easier
+        origin === remote repo URL
 
 9. pull = (fetch + merge) changes on the remote server to your working directory
 

@@ -1,0 +1,7 @@
+git init will:
+    + create a .git subdirectory in the current working directory
+    + .git contains all necessary metadata:
+        - objects
+        - refs
+        - temp files
+        - initialize HEAD pointer for the "master" branch 

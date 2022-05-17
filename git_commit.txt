@@ -1,0 +1,16 @@
+1. Description
+    + every commit contains:
+        - the index data
+        - the commit message
+    + commit command: used to fetch updates from the staging area to the repository
+    + commit the change and generate a commit-id
+    + commit command without any argument will open the default text editor and ask for the commit message
+
+2. Use cases
+    + git commit -a:
+        - only consider already added files in Git
+        - not commit the newly created files
+        - after modified, can commit -a immediately without git add
+    + git commit -m: write message, not open the text editor
+    + git commit -am: for already staged files
+    + git commit -amend: edit the last commit
