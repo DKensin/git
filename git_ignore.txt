@@ -1,0 +1,25 @@
+1. Description
+    + .gitignore used to specify intentionally untracked files that Git should ignore
+    + the file system of Git is classified into 3 categories:
+        - tracked: previously staged/committed
+        - untracked: not previously staged/committed
+        - ignore: explicitly ignore by Git
+
+2. Use cases: generally, ignore files are artifacts and machine-generated files:
+    + dependency caches
+    + compiled code
+    + build output directory: /bin, /put, /target
+    + runtime file generated: .log, .lock, .tmp
+    + hidden system files: thumbs.ds, .ds_store
+    + IDE config files: .idead/workspace.xml
+
+3. Examples
+    + create a .gitignore file
+    + add:
+        - *.txt: ignore all the text files from repo
+        - /newfolder/*: ignore newfolder and its sub-content
+        - commit the .gitignore file
+
+4. Global .gitignore
+    + create a universal .gitignore can be used for the whole project
+    + cmd: git config --global core.excludesfile ~/.gitignore_global => create a global .gitignore

@@ -1,8 +1,18 @@
 git init
 git clone
-git remote -v
 git pull
 git push
+===================================================================
+git remote: default is origin
+git remote -v: url of default origin
+git remote add short_name remote_URL
+git clone/fetch/pull remote_name
+git clone remote_name
+git push remote_name branch_name: git push origin master
+git remote rm/remove remote_name: git remote rm origin
+git remote rename old_name new_name
+git remote show remote_name
+git remote set-url remote_name new_URL
 ===================================================================
 working directory
 staging area
@@ -105,3 +115,19 @@ replace p => s
 add # before commit content
 git push origin <current_branch>
 git push -f origin <current_branch>
+===================================================================
+git tag:
+===================================================================
+git checkout branch_name: git checkout master
+git tag tag_name: create tag
+git tag
+git show
+git tag -l ".*": wildcard
+git tag show tag_name
+annotated tags: git tag tag_name -m "tag_message": contain some additional information: author name, email, date...
+light-weighted tag: git tag tag_name
+git push origin tag_name
+git push origin --tag / git push --tags: push all the available tags at once
+git tag --d tag_name / git tag --delete tag_name
+git push origin -d tag_name / git push origin --delete tag_name: delete a remote tag
+git checkout tag_name
