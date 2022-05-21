@@ -94,6 +94,7 @@ git reset --hard <commit_id>: remove commit
 
 ===================================================================
 git revert <commid_id>: revert all content at <commit_id>, then will create new commit_id
+git revert -m 1 <commit_id>: (1 = specify the parent number): revert merge
 
 ===================================================================
 pull request
