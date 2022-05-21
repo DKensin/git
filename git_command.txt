@@ -131,3 +131,8 @@ git push origin --tag / git push --tags: push all the available tags at once
 git tag --d tag_name / git tag --delete tag_name
 git push origin -d tag_name / git push origin --delete tag_name: delete a remote tag
 git checkout tag_name
+
+git branch -a: list all remote and local branch
+git push --set-upstream origin master: set master branch ass the default remote branch
+git branch --set-upstream-to origin master: method 2
+git branch -vv: display default remote branch

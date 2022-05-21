@@ -47,3 +47,8 @@
         - fork the repository
         - make the fix
         - forward a pull request to the project owner
+
+15. Upstream and downstream
+
+upstream: remote repo, where will clone/pull
+downstream: any local repo integrate your work with other works
