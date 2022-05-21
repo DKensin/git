@@ -36,6 +36,20 @@ git reset HEAD <file>: unstage
 ===================================================================
 git log
 git log --oneline
+git log --stat
+git log --patch = git log -p
+git log --graph
+git log --graph --
+filter:
+git log -3: by amount
+git log --after="yy-mm-dd": git log --after="2019-11-01": by date and time
+    + can pass the reference statement like: "yesterday", "1 week ago", "21 days ago"
+    + example: git log --after="21 days ago"
+git log --after="2019-11-01" --before="2019-11-08 ": in a period time
+git log --author="Author name": by author
+git log -author="@gmail.com": by author
+git log --grep="Commit message": by commit message
+===================================================================
 git show <commit_id>
 git diff: show change with files already in repo
 ===================================================================
@@ -118,7 +132,6 @@ git push origin <current_branch>
 git push -f origin <current_branch>
 ===================================================================
 git tag:
-===================================================================
 git checkout branch_name: git checkout master
 git tag tag_name: create tag
 git tag
@@ -132,8 +145,11 @@ git push origin --tag / git push --tags: push all the available tags at once
 git tag --d tag_name / git tag --delete tag_name
 git push origin -d tag_name / git push origin --delete tag_name: delete a remote tag
 git checkout tag_name
-
+===================================================================
 git branch -a: list all remote and local branch
 git push --set-upstream origin master: set master branch ass the default remote branch
 git branch --set-upstream-to origin master: method 2
 git branch -vv: display default remote branch
+===================================================================
+git checkout branch_name
+git cherry-pick commit_id: pick commid_id into current branch
