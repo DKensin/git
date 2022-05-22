@@ -121,7 +121,9 @@ pull request
     4.2 fetch branch into local to test offline (optional)
     4.3 approve the pull request
 5. merge to master
-
+===================================================================
+git checkout current_branch_name
+git rebase master: apply rebase current_branch_name in master branch
 ===================================================================
 git squash
 git log --oneline
