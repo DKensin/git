@@ -50,8 +50,15 @@ git log --author="Author name": by author
 git log -author="@gmail.com": by author
 git log --grep="Commit message": by commit message
 ===================================================================
+git show
 git show <commit_id>
-git diff: show change with files already in repo
+===================================================================
+git diff: before stage (use git add)
+git diff --staged: diff files in staging area
+git diff commit_id / HEAD~1: diff after commit
+git diff first_commit_id second_commit_id: diff between 2 commits
+git log -p --follow -- file_name: diff of changes in file_name file
+git diff first_branch second_branch: diff between 2 branch
 ===================================================================
 git config --global user.email "email"
 git config --global user.name "Toan"
