@@ -80,17 +80,10 @@ git reset HEAD~1: move in staging area
 git reset --hard <commit_id>: remove all changes
 HEAD~1: the last commit
 ===================================================================
-branch and merge
-
-git branch
-git checkout <branch_name>
+git checkout branch_name
 git checkout -b feature/dog-class
     - create anh checkout new branch
     - feature/dog-class: how to name for branch
-take a look:
-    - switch feature/dog-class -> switched to branch 'witch feature/dog-class'
-    - switch to main branch -> Switched to branch 'main'. Your branch is up to date with 'origin/main'.
-    - branch: main, remotes/origin/main
 
 remotes/origin/main vs main:
     - at time t: remotes/origin/main and main point to commit id <a>
@@ -100,13 +93,14 @@ remotes/origin/main vs main:
     - after push from local -> remote => both emotes/origin/main and main point to <b>
 origin: main branch, different between "main branch" with branch named "main"
 
-git merge:
-    - merge B into A
-    1. first: checkout master
-    2. git merge B: mean merge B into A
-
-git branch -D <branch_name> (delete branch)
-
+git branch = git branch --list: list branch
+git branch -d branch_name: delete branch that already merged
+git branch -D branch_name: allow delete branch that not merged already
+git push origin -delete branch_name: delete remote branch
+git branch -m old_branch_name new_branch_name: rename branch
+merge branch:
+    git checkout target_branch
+    git merge branch_name: merge branch_name into target_branch
 ===================================================================
 after commit:
 git reset --soft <commid_id>: move all from repo to <commid_id>, in staging area (ready to commit)
