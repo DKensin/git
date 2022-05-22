@@ -132,6 +132,8 @@ replace p => s
 add # before commit content
 git push origin <current_branch>
 git push -f origin <current_branch>: if already push commit before
+    + -f === fast-forward: can simple understand that overide commit
+    + apply for: git rebase, git squash, git commit --amend
 ===================================================================
 git tag:
 git checkout branch_name: git checkout master
