@@ -96,7 +96,7 @@ origin: main branch, different between "main branch" with branch named "main"
 git branch = git branch --list: list branch
 git branch -d branch_name: delete branch that already merged
 git branch -D branch_name: allow delete branch that not merged already
-git push origin -delete branch_name: delete remote branch
+git push origin --delete branch_name: delete remote branch
 git branch -m old_branch_name new_branch_name: rename branch
 merge branch:
     git checkout target_branch
